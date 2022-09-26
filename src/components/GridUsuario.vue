@@ -46,11 +46,13 @@ export default {
 
         return{
             nombre,
-            mostrar,
             consumir_api,
             lista_usuarios,
             titulo
         }
     },
+    created(){
+        this.consumir_api()
+    }
 }
 </script>
